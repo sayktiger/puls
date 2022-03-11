@@ -1,0 +1,17 @@
+.button{
+    background-color: $main-red;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 9px 19px;
+    border: none;
+    &_main{
+            margin-top: 67px;
+            width: 300px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+}
