@@ -1,6 +1,6 @@
 @import "base/mixins";
 @import "base/variables";
-
+@import "media/media";
 
 *{
     font-family: "Museo Sans", sans-serif;
@@ -14,3 +14,4 @@
 @import "block/promo";
 @import "block/header";
 @import "block/buttons";
+@import "block/advantage";
