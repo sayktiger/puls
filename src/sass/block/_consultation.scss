@@ -1,0 +1,15 @@
+.consultation{
+    padding: 100px 0 92px 0;
+    background: url(../../img/bg_free.jpg) center center /cover no-repeat;
+    h2{
+        @include title;
+        color: #fff;
+        text-align: left;
+    }
+    &__description{
+        margin-top: 80px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+}
