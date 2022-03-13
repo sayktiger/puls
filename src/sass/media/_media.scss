@@ -8,6 +8,17 @@
             align-items: center;
         }
     }
+
+    .consultation{
+        text-align: center;
+        h2{
+            text-align: center;
+        }
+        form{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
     
 }
 
@@ -43,6 +54,17 @@
 
         &__text{
             margin: 0px;
+        }
+    }
+
+    .consultation{
+        
+        h2{
+            font-size:24px ;
+        }
+        &__description{
+            margin-top: 25px;
+            font-size: 22px;
         }
     }
  }
@@ -86,4 +108,14 @@
              font-size: 24px;
          }
      }
+
+     .consultation{
+        padding-top: 20px;
+        h2{
+            font-size:24px ;
+        }
+        &__description{
+            font-size: 14px;
+        }
+    }
  }
