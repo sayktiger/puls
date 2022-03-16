@@ -67,6 +67,16 @@
             font-size: 22px;
         }
     }
+    .carousel{
+        &__inner{
+            height: auto;
+            max-width: 576px;
+            img{
+                height: auto;
+                max-width: 576px;
+            }
+        }
+    }
  }
 
  @media(min-width:320px) and (max-width:576px){
@@ -118,4 +128,15 @@
             font-size: 14px;
         }
     }
+    .carousel{
+        &__inner{
+            height: auto;
+            max-width: 320px;
+            img{
+                height: auto;
+                max-width: 320px;
+            }
+        }
+    }
+    
  }
