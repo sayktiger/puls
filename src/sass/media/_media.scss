@@ -179,4 +179,14 @@
             margin-top: 10px;
         }
     }
+
+    .footer{
+        &__info{
+            width: 300px;
+            height: 220px;
+        }
+        &__address{
+            font-size: 16px;
+        }
+    }
  }
