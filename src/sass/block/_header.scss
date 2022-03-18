@@ -26,8 +26,9 @@
         color: #ffffff;
         display: block;
         &:hover{
-            color:#fff;
+            color:$main-red;
             text-decoration: none;
+            
         }
     }
 

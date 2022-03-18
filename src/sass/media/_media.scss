@@ -189,4 +189,12 @@
             font-size: 16px;
         }
     }
+    .overlay{
+        .modal{
+            width: 280px;
+            &__close{
+                right: 0;
+            }
+        }
+    }
  }
