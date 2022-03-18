@@ -4,13 +4,13 @@
         @include title;
     }
     &__tabs{
-        margin-top: 70px;
         list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0;
+        margin-top: 70px;
     }
 
     &__tab{
@@ -42,12 +42,18 @@
     }
     
     &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: 60px;
+        
         .catalog-item{
+            overflow: hidden;
             width: 300px;
             min-height: 440px;
             border: 2px solid #e8e8e8;
             padding: 20px 20px 26px 20px;
+            margin-bottom: 20px;
             &__img{
                 display: block;
                 margin: 0 auto;
@@ -103,7 +109,70 @@
                 font-weight: 700;
                 color: #050505;
             }
-            
+            &__wrapper{
+                display: flex;
+                width:calc(200% + 40px);
+            }
+            &__content{
+                
+                width: 50%;
+                margin-right: 0px;
+                transform: translateX(-100%);
+                transition: 0.5s all;
+                &_active{
+                    transform: translateX(0%);
+                    margin-right: 20px;
+                }
+            }
+           
+            &__list{
+                width: 50%;
+                margin-left: 20px;
+                transform: translateX(0%);
+                padding-right: 20px;
+                transition: 0.5s all;  
+                padding-left: 19px;
+                margin: 0;
+                list-style-type: none;
+                
+                &_active{
+                    transform: translateX(-100%);
+                    margin-left: 0px;
+                }
+                li{
+                    font-size: 14px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    color: #555555;
+                    margin-bottom: 20px;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-red;
+                        top: 5px;
+                        left:-14px;
+                    }
+                }
+                a{
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: underline;
+                    color: $main-red;
+                    position: absolute;
+                    bottom: 0;
+                    left:50%;
+                    transform: translateX(calc(-50% - 19px));
+                    display: block;
+                    text-transform: uppercase;
+                    &:hover{
+                        color:$main-red;
+                    }
+                }
+            }
+           
         }
     }
 }
