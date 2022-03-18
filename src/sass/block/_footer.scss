@@ -1,0 +1,52 @@
+.footer{
+    height: 630px;
+    position: relative;
+    &__info{
+        width: 460px;
+        height: 270px;
+        background-color: $main-red;
+        position: absolute;
+        top:0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    &__address{
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 50px;
+    }
+    &__phone{
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        transition: 0.3s all;
+       &:hover{
+           color:#fff;
+       }
+    }
+    &__social{
+        margin-top: 38px;
+        display: flex;
+        justify-content: center;
+    }
+    &__social-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+        border-radius: 100%;
+        margin: 0 15px;
+        img{
+            height: 27px;
+        }
+       
+    }
+
+}
