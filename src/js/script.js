@@ -117,7 +117,7 @@ $(document).ready(function(){
 
     $('.scrollto a').on('click', function() {
 
-      let href = $(this).attr('href');
+      let href = $(this).attr('href="#up"');
   
       $('html, body').animate({
           scrollTop: $(href).offset().top
