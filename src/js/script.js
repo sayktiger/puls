@@ -114,4 +114,37 @@ $(document).ready(function(){
       });
       return false;
     });
+
+    $('.scrollto a').on('click', function() {
+
+      let href = $(this).attr('href');
+  
+      $('html, body').animate({
+          scrollTop: $(href).offset().top
+      }, {
+          duration: 370,   // по умолчанию «400» 
+          easing: "linear" // по умолчанию «swing» 
+      });
+  
+      return false;
+    });
+
+    //Scroll up
+    $(window).scroll(function(){
+      if($(this).scrollTop()>1600){
+        $(`.pageup`).fadeIn();
+      }
+      else{
+        $(`.pageup`).fadeOut();
+      }
+    });
+
+    $("a.pageup").on("click", function(e){
+      e.preventDefault();
+      var anchor = $(this).attr('href');
+      $('html, body').stop().animate({
+          scrollTop: $(anchor).offset().top
+      }, 800);
+  });
+
   });
