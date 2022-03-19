@@ -1,10 +1,14 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/slick";
+@import "libs/slick-theme";
+@import "libs/animate";
 @import "base/mixins";
 @import "base/variables";
 @import "base/animate";
 
 
 
-*{
+*{  
     font-family: "Museo Sans", sans-serif;
 }
 
